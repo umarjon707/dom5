@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+  
+  form{
+        display: flex;
+        gap: 200px;
+        align-items: center;
+        justify-content: center;
+  }
+input{
+    height: 50px;
+    width: 300px;
+}
+    .box{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+
+    }
+    .box h2 , h3 ,h4 ,h5{
+        font-size: 20px;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    color: white;
+    border-radius: 100px;   
+    border: 0;
+    cursor: pointer;
+    }
+
+    
+    </style>
+</head>
+<body>
+   <h1>Example form</h1>
+   <div class="box">
+    <h2>All: 12</h2>
+    <h3>Need: <span class="Need"></span></h3>
+    <h4>Success: <span class="success"></span></h4>
+    <h5>Error: <span class="error"></span></h5>
+   </div>
+
+    <form name="signup">
+        <div class="name">
+            <p>Name</p>
+                <input id="txt" type="text"  name="name" >
+            <p>Surname</p>
+            <input type="text" name="Surname" >
+            <p>Email address</p>
+            <input id="txt" type="email" name="email">
+            <p>Phone number</p>
+            <input type="number" name="number">
+            <p>Mother's Name</p>
+            <input type="text" name="Mother's name">
+            <p>Father's Name</p>
+            <input type="text" name="Father's name">
+        </div>
+ 
+        <div class="age">
+            <p>Age</p>
+            <input id="txt" type="number" name="age">
+            <p>About You</p>
+            <input id="txt" type="text" name="About You">
+            <p> What is the Javascript?</p>
+            <input id="txt" type="text" name="Javascript">
+            <p>What is the HTML?</p>
+            <input id="txt" type="text" name="html">
+            <p>What is the CSS?</p>
+            <input id="txt" type="text" name="CSS">
+            <p>Your favorite car</p>
+            <input type="text" name="car">
+        </div>
+
+        <button>Save changes</button>
+
+    </form>
+  
+    <script src="./index.js"></script>
+</body>
+</html>
